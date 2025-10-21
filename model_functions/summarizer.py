@@ -1,5 +1,6 @@
 """
 Extractive summarizer stub.
+Developer should add model and return a formatted string.
 Provide function: summarize(text) -> str
 """
 
