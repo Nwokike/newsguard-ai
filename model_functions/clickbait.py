@@ -1,5 +1,6 @@
 """
 Clickbait detection stub.
+Developer should add model and return a formatted string.
 Provide function: is_clickbait(headline_text) -> str ("Yes" or "No")
 """
 
