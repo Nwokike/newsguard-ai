@@ -1,5 +1,6 @@
 """
 Emotion detection stub.
+Developer should add model and return a formatted string.
 Provide function: get_emotion(text) -> str
 """
 
