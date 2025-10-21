@@ -1,5 +1,6 @@
 """
 Sentiment analysis stub.
+Developer should add model and return a formatted string.
 Provide function: predict_sentiment(text) -> str
 """
 
