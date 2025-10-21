@@ -1,5 +1,6 @@
 """
 Bias detection stub.
+Developer should add model and return a formatted string.
 Provide function: detect_bias(text) -> str
 """
 
