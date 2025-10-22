@@ -4,15 +4,19 @@ Provide function: predict_topic(text) -> str
 """
 
 import os
+import joblib
 
-MODEL_PATH = os.path.join(os.path.dirname(__file__), '..', 'models', 'topic_model.pkl')
+MODEL_PATH = os.path.join('models', 'topic_model.pk1')
+VECTORIZER_PATH = os.path.join('models', 'topic_vectorizer.pk1')
 
+model = joblib.load(MODEL_PATH)
+vectorizer = joblib.load(VECTORIZER_PATH)
 
 def predict_topic(text: str) -> str:
-    """Return predicted topic as string. Current stub returns a placeholder.
-    Replace this with actual model loading and prediction.
-    """
-    # Placeholder behavior until model is added
+    # Returns a news topic prediction for the given text
     if not text or not text.strip():
         return "No text provided"
-    return "Coming Soon: Topic model not yet added"
+    x = vectorizer.transform([text])
+    prediction = model.predict(x)[0]
+    return prediction
+
