@@ -5,9 +5,11 @@ Provide function: predict_topic(text) -> str
 
 import os
 import joblib
+import pathlib
 
-MODEL_PATH = os.path.join('models', 'topic_model.pkl')
-VECTORIZER_PATH = os.path.join('models', 'topic_vectorizer.pkl')
+current_dir = pathlib.Path(__file__).parent
+MODEL_PATH = current_dir.parent / 'models' / 'topic_model.pkl'
+VECTORIZER_PATH = current_dir.parent / 'models' / 'topic_vectorizer.pkl' 
 
 model = joblib.load(MODEL_PATH)
 vectorizer = joblib.load(VECTORIZER_PATH)
