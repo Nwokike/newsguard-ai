@@ -7,6 +7,5 @@ nltk==3.8.1
 spacy==3.5.0
 textblob==0.17.1
 transformers==4.35.0
-torch
 sentence-transformers==2.2.2
 regex==2024.10.14
