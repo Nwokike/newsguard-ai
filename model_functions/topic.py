@@ -6,8 +6,8 @@ Provide function: predict_topic(text) -> str
 import os
 import joblib
 
-MODEL_PATH = os.path.join('models', 'topic_model.pk1')
-VECTORIZER_PATH = os.path.join('models', 'topic_vectorizer.pk1')
+MODEL_PATH = os.path.join('models', 'topic_model.pkl')
+VECTORIZER_PATH = os.path.join('models', 'topic_vectorizer.pkl')
 
 model = joblib.load(MODEL_PATH)
 vectorizer = joblib.load(VECTORIZER_PATH)
