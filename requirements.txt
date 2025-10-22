@@ -8,4 +8,4 @@ spacy==3.5.0
 textblob==0.17.1
 transformers==4.35.0
 sentence-transformers==2.2.2
-regex==2024.10.14
+torch
