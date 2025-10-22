@@ -63,6 +63,8 @@ newsguard-ai/
 
 ## 🧠 Models
 
+This table shows the high-level status of each module. See the "Data Sources" section below for the specific datasets and requirements for each model.
+
 | Feature | Function | Status |
 | :--- | :--- | :---: |
 | Topic Classification | `predict_topic(text)` | ✅ Done |
@@ -72,6 +74,45 @@ newsguard-ai/
 | Bias Detection | `detect_bias(text)` | 🚧 Coming Soon |
 | Extractive Summarizer | `summarize(text)` | 🚧 Coming Soon |
 | Emotion Detection | `get_emotion(text)` | 🚧 Coming Soon |
+
+### Data Sources & Contributor Guide
+
+This is the official list of datasets for the project. Contributors working on a "Coming Soon" module should use the specified dataset and deliverable.
+
+  * **Topic Classification (Done)**
+
+      * **Dataset:** [News Category Dataset](https://www.kaggle.com/datasets/rmisra/news-category-dataset)
+      * **Deliverable:** A function `predict_topic(text)` in `model_functions/topic.py` that returns the predicted category as a string.
+
+  * **Fake News Detection (Done)**
+
+      * **Dataset:** [Fake and Real News Dataset](https://www.kaggle.com/datasets/clmentbisaillon/fake-and-real-news-dataset)
+      * **Deliverable:** A function `predict_fake(text)` in `model_functions/fake.py` that returns a formatted string like `"High Risk (Fake) - 92.51%"`.
+
+  * **Sentiment Analysis (Done)**
+
+      * **Dataset:** [Sentiment Analysis for Financial News](https://www.kaggle.com/datasets/ankurzing/sentiment-analysis-for-financial-news)
+      * **Deliverable:** A function `predict_sentiment(text)` in `model_functions/sentiment.py` that returns "Positive," "Negative," or "Neutral."
+
+  * **Clickbait Detection (Done)**
+
+      * **Dataset:** [Clickbait Dataset](https://www.kaggle.com/datasets/amananandrai/clickbait-dataset)
+      * **Deliverable:** A function `is_clickbait(headline_text)` in `model_functions/clickbait.py` that returns "Yes" or "No".
+
+  * **Bias Detection (Coming Soon)**
+
+      * **Dataset:** [MBIC: A Media Bias Annotation Dataset](https://www.kaggle.com/datasets/timospinde/mbic-a-media-bias-annotation-dataset)
+      * **Deliverable:** A function `detect_bias(text)` in `model_functions/bias.py` that returns "Biased" or "Neutral."
+
+  * **Extractive Summarizer (Coming Soon)**
+
+      * **Dataset:** [Newspaper Text Summarization CNN/DailyMail](https://www.kaggle.com/datasets/gowrishankarp/newspaper-text-summarization-cnn-dailymail)
+      * **Deliverable:** A function `summarize(text)` in `model_functions/summarizer.py` that returns a single string containing the 3-sentence summary.
+
+  * **Emotion Detection (Coming Soon)**
+
+      * **Dataset:** [Emotions Dataset for NLP](https://www.kaggle.com/datasets/praveengovi/emotions-dataset-for-nlp)
+      * **Deliverable:** A function `get_emotion(text)` in `model_functions/emotion.py` that returns the predicted emotion.
 
 -----
 
@@ -115,7 +156,7 @@ newsguard-ai/
     ```bash
     git checkout -b feature/your-model
     ```
-2.  Add your files:
+2.  Add your files (see "Data Sources" section for model requirements):
       * Your training notebook $\rightarrow$ `/notebooks`
       * Your model + vectorizer $\rightarrow$ `/models`
       * Your inference script $\rightarrow$ `/model_functions`
