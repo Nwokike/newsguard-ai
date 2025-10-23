@@ -42,7 +42,7 @@ newsguard-ai/
 │   ├── fake_news_model.pkl
 │   ├── fake_news_vectorizer.pkl
 │   ├── sentiment_model.pkl
-│   ├── sentiment_vectorizer.pkl
+│   ├── tfidf_vectorizer.pkl
 │   ├── clickbait_model.pkl
 │   ├── clickbait_vectorizer.pkl
 │   └── ...
