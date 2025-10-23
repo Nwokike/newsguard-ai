@@ -9,8 +9,8 @@ Streamlit app to analyze news articles for credibility, sentiment, clickbait, an
 
   * **Onyeka Nwokike** — Team Lead / Topic Classification — [https://github.com/Nwokike](https://github.com/Nwokike)
   * **Stephen Ayankoso** — Fake News Detection — [https://github.com/Steve-ayan](https://github.com/Steve-ayan)
-  * **Rivaldo** — Sentiment Analysis — [https://github.com/rivaldo56](https://github.com/rivaldo56)
   * **Cleiton Langa** — Clickbait Detection — [https://github.com/cleitonlanga](https://github.com/cleitonlanga)
+  * **Rivaldo** — Sentiment Analysis — [https://github.com/rivaldo56](https://github.com/rivaldo56)
 
 -----
 
